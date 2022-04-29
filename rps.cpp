@@ -47,6 +47,8 @@ int main(){
 
     //interface
 
+    cout<<"\n------------------------------"<<endl;
+    cout<<"\nWELCOME TO ROCK PAPER SCISSORS!\n"<<endl;
     cout<<"------------------------------"<<endl;
     cout<<"\nDIFFICULTY:\n1.NORMAL\n2.HARD"<<endl;
     cout<<"\nEnter your choice: ";
@@ -241,6 +243,6 @@ int main(){
         cout<<"INVALID CHOICE!";
 
     cout<<"\n\nThanks for playing the game!"<<endl;
-    
+
     return 0;
 }
