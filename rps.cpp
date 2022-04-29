@@ -1,7 +1,10 @@
 //rock paper scissors game
+//GITHUB LINK- https://github.com/rikisupriyo/Rock-Paper-Scissor
 
 #include <bits/stdc++.h>
 using namespace std;
+
+//required functions used in this project
 
 int compare(pair<int, int> p){
     if(p.first == 1 && p.second == 0)
@@ -31,6 +34,8 @@ void dialogue(int *c){
     cin>>*c;
     cout<<"------------------------------"<<endl;
 }
+
+//driver code
 
 int main(){
     //variables
@@ -236,5 +241,6 @@ int main(){
         cout<<"INVALID CHOICE!";
 
     cout<<"\n\nThanks for playing the game!"<<endl;
+    
     return 0;
 }
