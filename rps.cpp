@@ -21,6 +21,17 @@ string compare(int choice, vector<string> v){
     return v[0];
 }
 
+void dialogue(int *c){
+    cout<<"------------------------------"<<endl;
+    cout<<"\nWHAT YOU WANT TO PICK?"<<endl;
+    cout<<"0 --> ROCK"<<endl;
+    cout<<"1 --> PAPER"<<endl;
+    cout<<"2 --> SCISSOR"<<endl;
+    cout<<"Enter your choice: ";
+    cin>>*c;
+    cout<<"------------------------------"<<endl;
+}
+
 int main(){
     //variables
     vector<string> v;
@@ -50,14 +61,7 @@ int main(){
 
             for(int i=1; i<=5; i++){
 
-                cout<<"------------------------------"<<endl;
-                cout<<"\nWHAT YOU WANT TO PICK?"<<endl;
-                cout<<"0 --> ROCK"<<endl;
-                cout<<"1 --> PAPER"<<endl;
-                cout<<"2 --> SCISSOR"<<endl;
-                cout<<"Enter your choice: ";
-                cin>>choice3;
-                cout<<"------------------------------"<<endl;
+                dialogue(&choice3);
 
                 if(choice3 == 0 || choice3 == 1 || choice3 == 2){
                     choice4 = rand()%3;
@@ -90,14 +94,7 @@ int main(){
 
             for(int i=1; i<=10; i++){
 
-                cout<<"------------------------------"<<endl;
-                cout<<"\nWHAT YOU WANT TO PICK?"<<endl;
-                cout<<"0 --> ROCK"<<endl;
-                cout<<"1 --> PAPER"<<endl;
-                cout<<"2 --> SCISSOR"<<endl;
-                cout<<"Enter your choice: ";
-                cin>>choice3;
-                cout<<"------------------------------"<<endl;
+                dialogue(&choice3);
 
                 if(choice3 == 0 || choice3 == 1 || choice3 == 2){
                     choice4 = rand()%3;
@@ -130,14 +127,7 @@ int main(){
             
             for(int i=1; i<=15; i++){
 
-                cout<<"------------------------------"<<endl;
-                cout<<"\nWHAT YOU WANT TO PICK?"<<endl;
-                cout<<"0 --> ROCK"<<endl;
-                cout<<"1 --> PAPER"<<endl;
-                cout<<"2 --> SCISSOR"<<endl;
-                cout<<"Enter your choice: ";
-                cin>>choice3;
-                cout<<"------------------------------"<<endl;
+                dialogue(&choice3);
 
                 if(choice3 == 0 || choice3 == 1 || choice3 == 2){
                     choice4 = rand()%3;
@@ -183,14 +173,7 @@ int main(){
         if(choice2 == 1){
             for(int i=1; i<=5; i++){
 
-                cout<<"------------------------------"<<endl;
-                cout<<"\nWHAT YOU WANT TO PICK?"<<endl;
-                cout<<"0 --> ROCK"<<endl;
-                cout<<"1 --> PAPER"<<endl;
-                cout<<"2 --> SCISSOR"<<endl;
-                cout<<"Enter your choice: ";
-                cin>>choice3;
-                cout<<"------------------------------"<<endl;
+                dialogue(&choice3);
 
                 if(choice3 == 0 || choice3 == 1 || choice3 == 2){
                     cout<<"You choose "<<v[choice3]<<" and your opponent choose "<<compare(choice3, v);
@@ -209,14 +192,7 @@ int main(){
         else if(choice2 == 2){
             for(int i=1; i<=10; i++){
 
-                cout<<"------------------------------"<<endl;
-                cout<<"\nWHAT YOU WANT TO PICK?"<<endl;
-                cout<<"0 --> ROCK"<<endl;
-                cout<<"1 --> PAPER"<<endl;
-                cout<<"2 --> SCISSOR"<<endl;
-                cout<<"Enter your choice: ";
-                cin>>choice3;
-                cout<<"------------------------------"<<endl;
+                dialogue(&choice3);
 
                 if(choice3 == 0 || choice3 == 1 || choice3 == 2){
                     cout<<"You choose "<<v[choice3]<<" and your opponent choose "<<compare(choice3, v);
@@ -235,14 +211,7 @@ int main(){
         else if(choice2 == 3){
             for(int i=1; i<=15; i++){
 
-                cout<<"------------------------------"<<endl;
-                cout<<"\nWHAT YOU WANT TO PICK?"<<endl;
-                cout<<"0 --> ROCK"<<endl;
-                cout<<"1 --> PAPER"<<endl;
-                cout<<"2 --> SCISSOR"<<endl;
-                cout<<"Enter your choice: ";
-                cin>>choice3;
-                cout<<"------------------------------"<<endl;
+                dialogue(&choice3);
 
                 if(choice3 == 0 || choice3 == 1 || choice3 == 2){
                     cout<<"You choose "<<v[choice3]<<" and your opponent choose "<<compare(choice3, v);
